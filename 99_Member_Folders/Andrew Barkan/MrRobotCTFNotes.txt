@@ -1,0 +1,16 @@
+Mr. Robot CTF Notes
+
+main goal: become admin
+
+First steps:
+	nmap <IP> -Pn -p- -sV -O -oN
+
+robots.txt is where crawlers can access
+
+website uses wordpress so wpscan works
+
+pentest monkey reverse shell
+
+crackstation for hashes
+
+privilege escalation

@@ -1,0 +1,28 @@
+Pickle Rick CTF
+
+Inspect
+Username: R1ckRul3s
+
+Robots.txt
+"Wubbalubbadubdub"
+
+Login.php is usually the name for login screens
+
+Successful login
+
+Command panel
+
+ls, cd, cat
+
+cat doesn't work as a print command
+Other commands that work like cat: tac, less, strings, grep, cp
+
+tac command works
+
+Find first ingredient under Sup3rSecr3tPickl3Ingred.txt
+
+Looking through /home/ directory leads to second ingredient
+
+Privilege escalation and looking through the /root/ directory leads to third ingredient
+
+Tips: look through /home/ and /root/ with ls -a and ls -al

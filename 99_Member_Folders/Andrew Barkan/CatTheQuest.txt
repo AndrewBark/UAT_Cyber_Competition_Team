@@ -1,0 +1,43 @@
+CatTheQuest Notes
+
+Challenge: WarmUP
+
+Resources Given: A python file that reads as follows
+
+def encrypt(input):
+    output = ""
+    for i in range(len(input)):
+        output += chr(ord(input[i]) + 2)
+    return output
+
+
+input = input("Enter a string to encrypt: ")
+if (encrypt(input) == "j6emavj5arn5vj2t6a2ha5pet{rv32p"):
+    print(f"CAT{{{input}}}")
+else:
+    print("NO invalid flag !")
+
+After running the code through Gemini AI, it was determined that it took the input and shifted each character by 2 spaces in the ASCII table. After putting the input in an ASCII Shift Cipher Decoder and setting the shift to 2, I found the flag to be CAT{h4ck_th3_pl3th0r4_0f_3ncrypt10n}
+
+
+
+Challenge: Secret Chest
+
+Resources Given: A PNG of a note with several hints
+
+Reading the note, I can get the answers for the prompts: 3, A, yrucreM, 0, key3. Using Gemini, I researched how to send a POST. Eventually I just used an online POST request website. After putting in the token, I found the flag.
+
+
+
+Challenge: Web File Viewer
+
+Resources Given: A website that contains a file system that I need to infiltrate.
+
+After clicking on the website, I have to take advantage of an LFI (Local File Inclusion) vulnerability to find the flag.txt file in the secret directory. Initially, I tried to use Base64 encoded directory traversals. But, eventually someone else pointed out that I could go to 165.227.157.253:8888/secret/flag.txt to find the flag.
+
+
+
+Challenge: Hidden
+
+Resources Given: After making a container, I was able to get into the IP through SSH and I started digging through the directory. The only commands that I was able to use were cat, cd, and ls. After looking through the directories, I wasn't able to find anything in the time that I had left.
+
